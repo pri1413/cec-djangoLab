@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/shop.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>  
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="hero">
+    <h1>Welcome to Our Shop</h1>
+    <a href="/products/" class="btn">Browse Products</a>
+  </div>
+  
+  <section class="pro">
+    <h2>Featured Products</h2>
+    <div class="prod">
+      <img src="{% static 'img/helmet_1.jpeg' %}" alt="Helmet 1">
+      <h3>Motorcycle Helmet</h3>
+      <p>Stay safe on the road with our high-quality Motorcycle Helmet. Designed for comfort and protection, it's perfect for riders of all levels.</p>
+      <p class="price">$159.99</p>
+    </div>
+    <div class="prod">
+      <img src="{% static 'img/helmet_2.jpeg' %}" alt="Helmet 1">
+      <h3>Bicycle Helmet</h3>
+      <p>Enjoy your bike rides while keeping safety in mind with our Bicycle Helmet. Lightweight and well-ventilated for a comfortable experience.</p>
+      <p class="price">$49.99</p>
+    </div>
+    <div class="prod">
+      <img src="{% static 'img/helmet_3.jpeg' %}" alt="Helmet 1">
+      <h3>Ski Helmet</h3>
+      <p>Hit the slopes confidently with our Ski Helmet. Featuring impact-resistant materials and an adjustable fit for maximum protection.</p>
+      <p class="price">$89.99</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; since 1975 House of Helmets. All rights reserved.</p>
+  </footer>
+</body>
+</html>

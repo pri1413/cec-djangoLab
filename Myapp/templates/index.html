@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="products">Products</a></li>
+        <li><a href="contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="hero">
+    <h1>Welcome to House of Helmets</h1>
+    <p>Discover the perfect helmet for your adventures</p>
+    <a href="shop" class="btn">Shop Now</a>
+  </div>
+  
+  <section class="intro">
+    <div class="container">
+      <h2>About House of Helmets</h2>
+      <p>At House of Helmets, we are dedicated to providing the best head protection gear for all your adventurous activities. Whether you're a motorcycle enthusiast, a passionate cyclist, or a skiing and snowboarding lover, we've got you covered.</p>
+      <p>With a wide range of helmets available, we cater to various sports, including cycling, motorcycling, skiing, and more. Our helmets are designed with cutting-edge technology and crafted from durable materials to provide optimal protection without compromising on aesthetics.</p>
+      <p>Whether you are a professional athlete or a recreational enthusiast, House of Helmets has the perfect headgear to suit your style and performance requirements. Explore our collection today and gear up for your next adventure with confidence!</p>
+    </div>
+  </section>
+  
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product">
+      <img src="{% static 'img/h1.jpeg' %}" alt="Helmet 1">
+      
+    </div>
+    <div class="product">
+      <img src="{% static 'img/h2.jpeg' %}" alt="Helmet 2">
+      
+    </div>
+    <div class="product">
+      <img src="{% static 'img/h3.jpeg' %}" alt="Helmet 3">
+      
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; since 1975 House of Helmets. All rights reserved.</p>
+  </footer>
+</body>
+</html>

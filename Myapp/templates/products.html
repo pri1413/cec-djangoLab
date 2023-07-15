@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/products.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="hero">
+    <h1>Welcome to Our Shop</h1>
+    <p>Explore our wide range of helmets</p>
+    <section class="products">
+      <h2>Featured Products</h2>
+      <div class="product">
+        <img src="{% static 'img/H1.jpeg' %}" alt="Helmet 1">
+        <h3>STUDDS</h3>
+        <p>$159</p>
+      </div>
+      <div class="product">
+          <img src="{% static 'img/H2.jpeg' %}" alt="Helmet 1">
+          <h3>STEELBIRD</h3>
+        <p>$130</p>
+      </div>
+      <div class="product">
+          <img src="{% static 'img/H3.jpeg' %}" alt="Helmet 1">
+          <h3>VEGA</h3>
+        <p>$260</p>
+      </div>
+    </section>
+  
+  <footer>
+    <p>&copy; since 1975 House of Helmets. All rights reserved.</p>
+  </footer>
+</body>
+</html>
